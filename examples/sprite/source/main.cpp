@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
 
     // create the main renderer
     auto *renderer = new C2DRenderer({C2D_SCREEN_WIDTH, C2D_SCREEN_HEIGHT});
-    renderer->setClearColor(Color::GrayLight);
+    renderer->setClearColor(Color::Black);
 
     // create a texture for the sprite
     auto *texture = new C2DTexture(renderer->getIo()->getDataReadPath() + "sprite_sheet.png");
